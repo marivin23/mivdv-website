@@ -1,9 +1,10 @@
-import styles from '../styles/Home.module.css'
+import style from '../styles/Home.module.css';
+import { Label } from '../components/label'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      Mivdv website works
+    <div className={style.container}>
+        <Label/>
     </div>
   )
 }
