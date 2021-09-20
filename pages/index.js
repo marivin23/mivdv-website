@@ -1,10 +1,10 @@
-import style from '../styles/Home.module.css';
-import { Label } from '../components/label'
+import Header from "../components/header/header";
 
 export default function Home() {
   return (
-    <div className={style.container}>
-        <Label/>
+    <div className='h-screen w-screen bg-background-shadow bg-background-color-regular'>
+      <Header/>
+
     </div>
   )
 }
