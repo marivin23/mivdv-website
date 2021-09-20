@@ -22,6 +22,7 @@ class Header extends React.Component {
             <div className='flex flex-row justify-between items-center w-36'>
                 {Object.keys(PAGES).map(page => {
                     return <div
+                        key={page}
                         className={this.props.router.pathname === PAGES[page] ? 'text-white text-xl font-header-links cursor-pointer font-bold' :
                             'text-white text-xl font-header-links cursor-pointer'}>
                             {this.props.router.pathname === PAGES[page] ? `/ ${page}` : page}
